@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem "sinatra"
-gem "httparty"
+gem "etsy"
 
 group :development do
   gem "pry"
