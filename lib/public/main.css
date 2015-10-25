@@ -30,10 +30,12 @@ body {
 
 .search-results {
   float: left;
+  border: 1px solid black;
 }
 
 .breadcrumbs {
   float: right;
+  border: 1px solid black;
 }
 
 .boxes span {
@@ -103,3 +105,28 @@ body {
 ul {
   list-style-type: none;
 }
+
+.categories {
+  border: 3px solid black;
+  float: left;
+  padding-right: 20px;
+  margin-left: 40px;
+}
+
+.refine-search {
+  clear: both;
+  float: left;
+  border: 1px solid black;
+}
+
+
+.refine {
+  clear: both;
+  display: block;
+}
+
+span .l-header {
+  display: block;
+  float: left;
+}
+

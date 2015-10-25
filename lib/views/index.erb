@@ -20,18 +20,129 @@
         <li><a href="http://etsy.com">Vintage</a></li>
       </ul>
     </div>
-    <div class="background">
-    <ul>
+    <div>
+      <ul>
         <section class="search-results">
           <li>Show results for:</li>
         </section>
         <section class="breadcrumbs">
-          <li><a href="http://etsy.com">All Categories</a> > "whiskey" <%= (results_num) %></li>
+          <li>
+            Sort by: <a class="link" href="http://etsy.com">Relevancy</a>
+          </li>
         </section>
         <section class="breadcrumbs">
-          <li>Sort by: <a href="http://etsy.com">Relevancy</a></li>
+          <li>
+            <a class="link" href="http://etsy.com">All Categories</a> > "whiskey" <%= (results_num) %>
+          </li>
         </section>
+        
       </ul>
+    </div>
+    <div class="refine">Refine your search</div>
+    <div class="break-page"><p>1</p></div>
+    <div class="categories">
+      <ul>
+        <li>All Categories</li>
+        <li><a class="link" href="http://etsy.com">Accessories</a></li>
+        <li><a class="link" href="http://etsy.com">Home & Living</a></li>
+      </ul>
+    </div>
+    <div class="refine-search">
+      <section>
+        <ul>
+          <li class="l-header">Item Type</li>
+          <li>
+            <ul>
+              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
+              <li><a id="selected-filter" href="http://etsy.com">All Items</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
+              <li><a href="http://etsy.com">Handmade</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
+              <li><a href="http://etsy.com">Vintage</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li class="l-header">Price</li>
+          <li>
+            <div class="price-box">$ Low</div>
+          </li>
+          <li>to</li>
+          <li>
+            <div class="price-box">$ High</div>
+          </li>
+          <li>
+            <div class="price-box">></div>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li class="l-header">Filter by Color</li>
+          <li><div class="color" id="red"></div></li>
+          <li><div class="color" id="orange"></div></li>
+          <li><div class="color" id="yellow"></div></li>
+          <li><div class="color" id="green"></div></li>
+          <li><div class="color" id="blue"></div></li>
+          <li><div class="color" id="purple"></div></li>
+          <li><div class="color" id="black"></div></li>
+          <li><div class="color" id="white"></div></li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li class="l-header">Ordering Options</li>
+          <li>
+            <div class="check-box"></div><span><a class="link" href="http://etsy.com">In Your Favorites</a></span>
+          </li>
+          <li>
+            <div class="check-box"></div><span><a class="link" href="http://etsy.com">Accepts Etsy Gift Cards</a></span>
+          </li>
+          <li>
+            <div class="check-box"></div><span><a class="link" href="http://etsy.com">Customizable</a></span>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li class="l-header">Item Type</li>
+          <li>
+            <ul>
+              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
+              <li><a id="selected-filter" href="http://etsy.com">Anywhere</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
+              <li><a href="http://etsy.com">United States</a></li>
+            </ul>
+          </li>
+          <li><a class="link" href="http://etsy.com">Choose a custom location.</a></li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li class="l-header">Ship To</li>
+          <li>
+            <div>
+              <span>United States</span>
+              <span>^</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
       <div class="block">
         <% results.each do |result| %>
           <section class="boxes">
@@ -46,6 +157,9 @@
            </div>
           </section>
         <% end %>
+        <div class="change-page"><</div>
+        <div class="change-page">1</div>
+        <div class="change-page">></div>
       <div>
     </div>
   </body>
