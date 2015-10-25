@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>Brian's Sample Etsy Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="nav">
+      <ul class="nav-items">
+        <li><a href="http://etsy.com">Clothing & Accessories</a></li>
+        <li><a href="http://etsy.com">Jewelry</a></li>
+        <li><a href="http://etsy.com">Craft Supplies & Tools</a></li>
+        <li><a href="http://etsy.com">Weddings</a></li>
+        <li><a href="http://etsy.com">Entertainment</a></li>
+        <li><a href="http://etsy.com">Home & Living</a></li>
+        <li><a href="http://etsy.com">Kids & Baby</a></li>
+        <li><a href="http://etsy.com">Vintage</a></li>
+      </ul>
+    </div>
+    <div class="background">
+    <ul>
+        <section class="search-results">
+          <li>Show results for:</li>
+        </section>
+        <section class="breadcrumbs">
+          <li><a href="http://etsy.com">All Categories</a> > "whiskey" <%= (results_num) %></li>
+        </section>
+        <section class="breadcrumbs">
+          <li>Sort by: <a href="http://etsy.com">Relevancy</a></li>
+        </section>
+      </ul>
+      <div class="block">
+        <% results.each do |result| %>
+          <section class="boxes">
+            <div class="image">
+              <img src="<%= result[:image] %>">
+            </div>
+            <div class="text">
+              <span id="title"><%= result[:title] %></span>
+              <span id="vendor"><%= result[:vendor] %></span>
+              <span class="price"><%= result[:price] %></span>
+              <span class="price"><%= result[:currency_code] %></span>
+           </div>
+          </section>
+        <% end %>
+      <div>
+    </div>
+  </body>
+</html>
