@@ -8,6 +8,21 @@
   </head>
 
   <body>
+    <div id="logo-search">
+      <ul class="left">
+        <li><div id="logo"><img src="http://i.imgur.com/pHJ2djt.png"></div></li>
+        <li>
+          <div class="search-bar">
+            <div ><span class="query">whiskey</span></div>
+            <div class="cta-button" id="search-button"><span class="search">Search</span></div>
+          </div>
+        </li> 
+      </ul>
+      <ul class="right">
+        <li><div><a class="link" href="http://etsy.com">Sell on Etsy</a></div></li>
+        <li><div> 
+      </ul>
+    </div>
     <div class="nav">
       <ul class="nav-items">
         <li><a href="http://etsy.com">Clothing & Accessories</a></li>
@@ -23,23 +38,22 @@
     <div>
       <ul>
         <section class="search-results">
-          <li>Show results for:</li>
+          <li><span>Show results for:</span></li>
         </section>
-        <section class="breadcrumbs">
+        <section class="breadcrumbs" id="relevancy">
           <li>
-            Sort by: <a class="link" href="http://etsy.com">Relevancy</a>
+            <span>Sort by: <a class="link" href="http://etsy.com">Relevancy</a></span>
           </li>
         </section>
-        <section class="breadcrumbs">
+        <section class="breadcrumbs" id="results_num">
           <li>
-            <a class="link" href="http://etsy.com">All Categories</a> > "whiskey" <%= (results_num) %>
+            <span><a class="link" href="http://etsy.com">All Categories</a> > <strong>"whiskey"</strong> (<%= results_num %> Results)</span>
           </li>
         </section>
         
       </ul>
     </div>
-    <div class="refine">Refine your search</div>
-    <div class="break-page"><p>1</p></div>
+    
     <div class="categories">
       <ul>
         <li>All Categories</li>
@@ -47,6 +61,7 @@
         <li><a class="link" href="http://etsy.com">Home & Living</a></li>
       </ul>
     </div>
+    <div class="refine">Refine your search</div>
     <div class="refine-search">
       <section>
         <ul>
@@ -60,13 +75,13 @@
           <li>
             <ul>
               <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
-              <li><a href="http://etsy.com">Handmade</a></li>
+              <li><a class="link" href="http://etsy.com">Handmade</a></li>
             </ul>
           </li>
           <li>
             <ul>
               <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
-              <li><a href="http://etsy.com">Vintage</a></li>
+              <li><a class="link" href="http://etsy.com">Vintage</a></li>
             </ul>
           </li>
         </ul>
@@ -128,7 +143,7 @@
               <li><a href="http://etsy.com">United States</a></li>
             </ul>
           </li>
-          <li><a class="link" href="http://etsy.com">Choose a custom location.</a></li>
+          <li><a class="link" href="http://etsy.com">Choose a custom location</a></li>
         </ul>
       </section>
       <section>
@@ -157,10 +172,66 @@
            </div>
           </section>
         <% end %>
-        <div class="change-page"><</div>
-        <div class="change-page">1</div>
-        <div class="change-page">></div>
+        <div class="nav-arrows">
+          <div class="change-page"><</div>
+          <div class="change-page">1</div>
+          <div class="change-page">></div>
+        </div>
       <div>
+    </div>
+    <div id="footer">
+      <div class="cta">
+        <p>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
+        <div class="cta-button" id="sub"><span>Subscribe</span></div>
+      </div>
+      <div class="footer-sitemap">
+        <section>
+          <p>Turn your passion into a business</p>
+          <div><span>Open a shop</span></div>
+          <p>Sell on Etsy</p>
+          <p><a class="link" href="http://etsy.com">Seller Handbook</a></p>
+          <p><a class="link" href="http://etsy.com">Etsy credit card reader</a></p>
+        </section>
+        <section>
+          <p>Join the community</p>
+          <p><a class="link" href="http://etsy.com">Teams</a></p>
+          <p><a class="link" href="http://etsy.com">Forums</a></p>
+          <p><a class="link" href="http://etsy.com">Upcoming events</a></p>
+          <p><a class="link" href="http://etsy.com">Affiliates</a></p>
+        </section>
+        <section>
+          <p>Discover and shop</p>
+          <p><a class="link" href="http://etsy.com">Gift cards</a></p>
+          <p><a class="link" href="http://etsy.com">Blog</a></p>
+          <p><a class="link" href="http://etsy.com">Tastemakers</a></p>
+          <p><a class="link" href="http://etsy.com">Mobile apps</a></p>
+          <p><a class="link" href="http://etsy.com">Gift registries</a></p>
+          <p><a class="link" href="http://etsy.com">Wholesale</a></p>
+          <p><a class="link" href="http://etsy.com">Manufacturing</a></p>
+          <p><a class="link" href="http://etsy.com">Search</a></p>
+          <p><a class="link" href="http://etsy.com">Etsy Finds</a></p>
+        </section>
+        <section>
+          <p>Get to know us</p>
+          <p><a class="link" href="http://etsy.com">About</a></p>
+          <p><a class="link" href="http://etsy.com">Policies</a></p>
+          <p><a class="link" href="http://etsy.com">Careers</a></p>
+          <p><a class="link" href="http://etsy.com">Press</a></p>
+          <p><a class="link" href="http://etsy.com">Developers</a></p>
+          <p><a class="link" href="http://etsy.com">Investors</a></p>
+        </section>
+        <section>
+          <p>Follow Etsy</p>
+          <img class="sm-icon" src="">
+          <span><a class="link" href="http://etsy.com">Facebook</a></span>
+          <img class="sm-icon" src="">
+          <span><a class="link" href="http://etsy.com">Twitter</a></span>
+          <img class="sm-icon" src="">
+          <span><a class="link" href="http://etsy.com">Pinterest</a></span>
+          <img class="sm-icon" src="">
+          <span><a class="link" href="http://etsy.com">Instagram</a></span>
+        </section>
+      </div>
     </div>
   </body>
 </html>
