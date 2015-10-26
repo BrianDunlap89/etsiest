@@ -13,14 +13,14 @@
         <li><div id="logo"><img src="http://i.imgur.com/pHJ2djt.png"></div></li>
         <li>
           <div class="search-bar">
-            <div ><span class="query">whiskey</span></div>
+            <div><span class="query">whiskey</span></div>
             <div class="cta-button" id="search-button"><span class="search">Search</span></div>
           </div>
         </li> 
       </ul>
       <ul class="right">
+      <li><img src="http://i.imgur.com/2ke1e9P.png"></li>
         <li><div><a class="link" href="http://etsy.com">Sell on Etsy</a></div></li>
-        <li><div> 
       </ul>
     </div>
     <div class="nav">
@@ -69,7 +69,11 @@
           <ul>
             <li class="l-header" id="first"><span>Item Type</span></li>
             <li>
-              <div class="big-circle"><div class="inner-circle"></div></div><span><a class="selected-filter" href="http://etsy.com">All Items</a></span></li>
+                <div class="inner-circle">
+                </div>
+                <div class="inner-inner-circle">
+                  </div>
+              <span><a class="selected-filter" href="http://etsy.com">All Items</a></span></li>
             </li>
             <li>
               <div class="outer-circle"></div></li><span><a class="link" href="http://etsy.com">Handmade</a></span>
@@ -135,19 +139,19 @@
         <div class="line-separator">
           <p></p>
         </div>
-        <section>
+        <section id="shop">
           <ul>
-            <li class="l-header">Shop Location</li>
+            <li class="l-header"><span>Shop Location</span></li>
             <li>
               <ul>
                 <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
-                <li><a class="selected-filter" href="http://etsy.com">Anywhere</a></li>
+                <li><span class="word"><a class="selected-filter" href="http://etsy.com">Anywhere</a></span></li>
               </ul>
             </li>
             <li>
               <ul>
                 <li><div class="outer-circle"></div></li>
-                <li><a class="link" href="http://etsy.com">United States</a></li>
+                <li><span class="word"><a class="link" href="http://etsy.com">United States</a></span></li>
               </ul>
             </li>
             <li><a class="link" href="http://etsy.com">Choose a custom location</a></li>
@@ -156,13 +160,12 @@
         <div class="line-separator">
           <p></p>
         </div>
-        <section>
+        <section id="ship">
           <ul>
             <li class="l-header"><span>Ship To</span></li>
             <li>
               <div>
                 <span>United States</span>
-                <span>^</span>
               </div>
             </li>
           </ul>
@@ -184,9 +187,15 @@
       <% end %>
       <div class="nav-arrows">
         <div class="change-page"><</div>
-        <div class="change-page">1</div>
+        <div class="change-page" id="number"><span>1</span></div>
         <div class="change-page">></div>
       </div>
+      <div class="section-end"></div>
+      </div>
+      <div class="line-separator" id="final">
+          <p></p>
+      </div>
+      <div class-"section-end"></div>
     <div id="footer">
       <div class="cta">
         <p>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>
@@ -195,7 +204,7 @@
       <div class="footer-sitemap">
         <section>
           <p>Turn your passion into a business</p>
-          <div><span>Open a shop</span></div>
+          <div class="cta-button" id="open"><span>Open a shop</span></div>
           <p>Sell on Etsy</p>
           <p><a class="link" href="http://etsy.com">Seller Handbook</a></p>
           <p><a class="link" href="http://etsy.com">Etsy credit card reader</a></p>
@@ -228,16 +237,16 @@
           <p><a class="link" href="http://etsy.com">Developers</a></p>
           <p><a class="link" href="http://etsy.com">Investors</a></p>
         </section>
-        <section>
+        <section class="sm">
           <p>Follow Etsy</p>
           <img class="sm-icon" src="">
-          <span><a class="link" href="http://etsy.com">Facebook</a></span>
+          <p><a class="link" href="http://etsy.com">Facebook</a></p>
           <img class="sm-icon" src="">
-          <span><a class="link" href="http://etsy.com">Twitter</a></span>
+          <p><a class="link" href="http://etsy.com">Twitter</a></p>
           <img class="sm-icon" src="">
-          <span><a class="link" href="http://etsy.com">Pinterest</a></span>
+          <p><a class="link" href="http://etsy.com">Pinterest</a></p>
           <img class="sm-icon" src="">
-          <span><a class="link" href="http://etsy.com">Instagram</a></span>
+          <p><a class="link" href="http://etsy.com">Instagram</a></p>
         </section>
       </div>
     </div>
