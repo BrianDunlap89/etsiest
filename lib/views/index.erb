@@ -56,129 +56,137 @@
     
     <div class="categories">
       <ul>
-        <li>All Categories</li>
+        <li><span>All Categories</span></li>
         <li><a class="link" href="http://etsy.com">Accessories</a></li>
         <li><a class="link" href="http://etsy.com">Home & Living</a></li>
       </ul>
     </div>
-    <div class="refine">Refine your search</div>
-    <div class="refine-search">
-      <section>
-        <ul>
-          <li class="l-header">Item Type</li>
-          <li>
-            <ul>
-              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
-              <li><a id="selected-filter" href="http://etsy.com">All Items</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
-              <li><a class="link" href="http://etsy.com">Handmade</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
-              <li><a class="link" href="http://etsy.com">Vintage</a></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li class="l-header">Price</li>
-          <li>
-            <div class="price-box">$ Low</div>
-          </li>
-          <li>to</li>
-          <li>
-            <div class="price-box">$ High</div>
-          </li>
-          <li>
-            <div class="price-box">></div>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li class="l-header">Filter by Color</li>
-          <li><div class="color" id="red"></div></li>
-          <li><div class="color" id="orange"></div></li>
-          <li><div class="color" id="yellow"></div></li>
-          <li><div class="color" id="green"></div></li>
-          <li><div class="color" id="blue"></div></li>
-          <li><div class="color" id="purple"></div></li>
-          <li><div class="color" id="black"></div></li>
-          <li><div class="color" id="white"></div></li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li class="l-header">Ordering Options</li>
-          <li>
-            <div class="check-box"></div><span><a class="link" href="http://etsy.com">In Your Favorites</a></span>
-          </li>
-          <li>
-            <div class="check-box"></div><span><a class="link" href="http://etsy.com">Accepts Etsy Gift Cards</a></span>
-          </li>
-          <li>
-            <div class="check-box"></div><span><a class="link" href="http://etsy.com">Customizable</a></span>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li class="l-header">Item Type</li>
-          <li>
-            <ul>
-              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
-              <li><a id="selected-filter" href="http://etsy.com">Anywhere</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
-              <li><a href="http://etsy.com">United States</a></li>
-            </ul>
-          </li>
-          <li><a class="link" href="http://etsy.com">Choose a custom location</a></li>
-        </ul>
-      </section>
-      <section>
-        <ul>
-          <li class="l-header">Ship To</li>
-          <li>
-            <div>
-              <span>United States</span>
-              <span>^</span>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </div>
-      <div class="block">
-        <% results.each do |result| %>
-          <section class="boxes">
-            <div class="image">
-              <img src="<%= result[:image] %>">
-            </div>
-            <div class="text">
-              <span id="title"><%= result[:title] %></span>
-              <span id="vendor"><%= result[:vendor] %></span>
-              <span class="price"><%= result[:price] %></span>
-              <span class="price"><%= result[:currency_code] %></span>
-           </div>
-          </section>
-        <% end %>
-        <div class="nav-arrows">
-          <div class="change-page"><</div>
-          <div class="change-page">1</div>
-          <div class="change-page">></div>
+    
+    <div class="refine">
+      <span class="heading">Refine your search</span>
+      <div class="refine-search">
+        <section>
+          <ul>
+            <li class="l-header" id="first"><span>Item Type</span></li>
+            <li>
+              <div class="big-circle"><div class="inner-circle"></div></div><span><a class="selected-filter" href="http://etsy.com">All Items</a></span></li>
+            </li>
+            <li>
+              <div class="outer-circle"></div></li><span><a class="link" href="http://etsy.com">Handmade</a></span>
+            </li>
+            <li>
+              <div class="outer-circle"></div><span><a class="link" href="http://etsy.com">Vintage</a></span>
+            </li>
+          </ul>
+        </section>
+        <div class="line-separator">
+          <p></p>
         </div>
-      <div>
+        <section>
+          <ul>
+            <li class="l-header"><span>Price</span></li>
+            <li>
+              <div class="price-box-a"><p>$ <span>Low</span></p></div>
+            </li>
+            <li><div class="price-box-b"><span class="price-span">to</span></div></li>
+            <li>
+              <div class="price-box-a"><p>$ <span>High</span></p></div>
+            </li>
+            <li>
+              <div class="price-box-c"><div><p>></p></div></div>
+            </li>
+          </ul>
+          <div class="section-end"></div>
+        </section>
+        <div class="line-separator">
+          <p></p>
+        </div>
+        <section>
+          <ul>
+            <li class="l-header"><span>Filter by Color</span></li>
+            <li><div class="color" id="red"></div></li>
+            <li><div class="color" id="orange"></div></li>
+            <li><div class="color" id="yellow"></div></li>
+            <li><div class="color" id="green"></div></li>
+            <li><div class="color" id="blue"></div></li>
+            <li><div class="color" id="purple"></div></li>
+            <li><div class="color" id="black"></div></li>
+            <li><div class="color" id="white"></div></li>
+          </ul>
+        </section>
+        <div class="section-end"></div>
+        <div class="line-separator">
+          <p></p>
+        </div>
+        <section id="ordering">
+          <ul>
+            <li class="l-header"><span>Ordering Options</span></li>
+            <li>
+              <div class="check-box"></div><span><a class="link" href="http://etsy.com">In Your Favorites</a></span>
+            </li>
+            <li>
+              <div class="check-box"></div><span><a class="link" href="http://etsy.com">Accepts Etsy Gift Cards</a></span>
+            </li>
+            <li>
+              <div class="check-box"></div><span><a class="link" href="http://etsy.com">Customizable</a></span>
+            </li>
+          </ul>
+        </section>
+        <div class="line-separator">
+          <p></p>
+        </div>
+        <section>
+          <ul>
+            <li class="l-header">Shop Location</li>
+            <li>
+              <ul>
+                <li><div class="outer-circle"><div class="inner-circle"></div></div></li>
+                <li><a class="selected-filter" href="http://etsy.com">Anywhere</a></li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <li><div class="outer-circle"></div></li>
+                <li><a class="link" href="http://etsy.com">United States</a></li>
+              </ul>
+            </li>
+            <li><a class="link" href="http://etsy.com">Choose a custom location</a></li>
+          </ul>
+        </section>
+        <div class="line-separator">
+          <p></p>
+        </div>
+        <section>
+          <ul>
+            <li class="l-header"><span>Ship To</span></li>
+            <li>
+              <div>
+                <span>United States</span>
+                <span>^</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </div>
+    <div class="block">
+      <% results.each do |result| %>
+        <section class="boxes">
+          <div class="image">
+            <img src="<%= result[:image] %>">
+          </div>
+          <div class="text">
+            <span id="title"><%= result[:title] %></span>
+            <span id="vendor"><%= result[:vendor] %></span>
+            <span class="price"><%= result[:price] %> <%= result[:currency_code] %></span>
+         </div>
+        </section>
+      <% end %>
+      <div class="nav-arrows">
+        <div class="change-page"><</div>
+        <div class="change-page">1</div>
+        <div class="change-page">></div>
+      </div>
     <div id="footer">
       <div class="cta">
         <p>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</p>

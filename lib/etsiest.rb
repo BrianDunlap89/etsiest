@@ -11,7 +11,7 @@ module Etsiest
 
     get "/search" do
     results = Etsy::Request.get("/listings/active", :includes => ["Images", "Shop"], 
-                               :keywords => "whiskey")
+                               :keywords => "unsalted butter")
     results = results.result
     results_num = results.count
     @results_data = []

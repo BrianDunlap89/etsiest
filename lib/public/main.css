@@ -6,6 +6,14 @@ body {
   font-weight: 300;
 }
 
+span {
+  font-size: 13px;
+}
+
+.footer-sitemap p {
+  font-size: 13px;
+}
+
 .left li {
   float: left;
   display: inline-block;
@@ -106,8 +114,8 @@ body {
 
 .search-results {
   float: left;
-  border: 1px solid black;
-
+  margin-top: 3px;
+  font-weight: bold;
 }
 
 .breadcrumbs {
@@ -117,7 +125,6 @@ body {
 .boxes span {
   display: inline-block;
   overflow: hidden;
-  font-size: 8px;
   font-family: "Fira Sans", sans-serif;
   font-weight: 300;
 }
@@ -128,7 +135,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 10px;
+  font-size: 12px;
   font-family: "Fira Sans", sans-serif;
   font-weight: 300;
 }
@@ -136,9 +143,9 @@ body {
 .block {
   width: 75%;
   float: right;
-  margin-right: 60px;
-  margin-top: -140px;
-  margin-left: -100px;
+  margin-right: 53px;
+  margin-top: -130px;
+  margin-left: -90px;
 }
 
 .text {
@@ -164,7 +171,7 @@ body {
 }
 
 .boxes {
-  border: 1px solid gray;
+  border: 1px solid #E1E3DF;
   border-radius: 5px;
   float: right;
   display: inline-block;
@@ -174,10 +181,15 @@ body {
 
 .price {
   float: right;
+  margin-top: 3px;
+  color: #78c042;
 }
 
 #vendor {
   float: left;
+  font-size: 11px;
+  color: #AAA;
+  margin-top: 4px;
 }
 
 ul {
@@ -186,10 +198,31 @@ ul {
 
 .categories {
   clear: both;
-  border: 3px solid black;
+  border: 1px solid black;
   float: left;
   padding-right: 20px;
   margin-left: 40px;
+  margin-top: 6px;
+  width: 220px;
+  height: 96px;
+  background-color: white;
+  border: 1px solid #E1E3DF;
+  border-radius: 3px;
+  margin-bottom: 2px;
+}
+
+.categories ul {
+  margin-top: 6px;
+}
+
+.categories ul span {
+  margin-left: -25px;
+  font-weight: bold;
+}
+
+.categories ul a {
+  display: inline-block;
+  margin-left: -20px;
 }
 
 .categories li {
@@ -201,12 +234,29 @@ ul {
 .refine-search {
   clear: both;
   float: left;
-  border: 1px solid black;
+  border: 1px solid #E1E3DF;
+  margin-top: -8px;
+  width: 236px;
 }
 
-.refine {
+.heading {
   clear: both;
   display: block;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+
+.refine span {
+  padding-top: 23px;
+}
+
+.refine-search {
+  margin-left: 40px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 3px;
 }
 
 #results_num {
@@ -217,6 +267,94 @@ ul {
 
 #relevancy {
   margin-right: 85px;
+  margin-top: 4px;
+}
+
+
+.big-cirle {
+  display: inline-block;
+  border: 1px solid #E1E3DF;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.price-box-a {
+  border: 1px solid #E1E3DF;
+  border-radius: 4px;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  float: left;
+  margin-top: 5px;
+  margin-left: -29px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.price-box-a p {
+  font-size: 13px;
+  margin-left: -6px;
+}
+
+.price-box-a span {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.25) ;
+}
+
+.price-box-b {
+  display: inline-block;
+  float: left;
+  height:40px;
+  width: 45px;
+  margin-left: 2px;
+  margin-right: 5px;
+  margin-top: -6px;
+}
+
+.price-box-c {
+  border: 1px solid #E1E3DF;
+  border-radius: 4px;
+  display: inline-block;
+  float: left;
+  height: 42px;
+  width: 40px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 7px;
+}
+.price-box-c div {
+  margin-top: -5px;
+}
+
+.price-span {
+  float: left;
+  margin-left: 4px;
+  margin-right: 7px;
+  display: inline-block;
+}
+
+.section-end {
+  clear:both;
+}
+
+.l-header {
+  margin-top: -3px;
+  margin-left: -29px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#first {
+  margin-top: -7px;
+}
+.line-separator {
+  height:1px;
+  width: 210px;
+  border-bottom: 1px solid #E1E3DF;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .breadcrumbs span {
@@ -270,8 +408,75 @@ span .l-header {
   height: 75px;
 }
 
+.color {
+  border: 1px solid #E1E3DF;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+  margin-right: 4px;
+  margin-top: 6px;
+  border-radius: 3px;
+}
+
+#red {
+  margin-left: -28px;
+  margin-right: 2px;
+  background: #f40b32;
+}
+
+#orange {
+  background: #ff7f00;
+}
+
+#yellow {
+  background: #f3cc0c;
+}
+
+#green {
+  background: #0ac20a;
+}
+
+#blue {
+  background: #0cccf3;
+}
+
+#purple {
+  background: #a60cf3;
+}
+
+#black {
+  background: #000000;
+}
+
+#white {
+  background: #fff;
+}
 .link {
   text-decoration: none;
   color: #0192B5;
   font-size: 13px;
+}
+
+.check-box {
+  display: inline-block;
+  border: 1px solid #E1E3DF;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 3px;
+}
+
+#ordering div {
+  margin-top: 5px;
+  margin-left: -29px;
+  margin-right: 5px;
+}
+
+#ordering span {
+  display: inline-block;
+  line-height: 14px;
+  vertical-align: middle;
+  margin-top: -25px;
+  margin-bottom: 3px;
 }
