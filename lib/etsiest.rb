@@ -12,7 +12,7 @@ module Etsiest
     get "/search" do
     results = Etsy::Request.get("/listings/active", :includes => ["Images", "Shop"], 
                                :keywords => "whiskey")
-    query[param]
+    #query[param]
     results = results.result
     results_num = results.count
     @results_data = []
@@ -22,7 +22,8 @@ module Etsiest
                    price: result["price"],
                    image: result["Images"][0]["url_fullxfull"],
                    currency_code: result["currency_code"],
-                   vendor: result["Shop"]["shop_name"]
+                   vendor: result["Shop"]["shop_name"],
+                   url: result["url"]
                  }
         @results_data.push(result)
       end

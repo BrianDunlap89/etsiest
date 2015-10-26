@@ -176,7 +176,7 @@
       <% results.each do |result| %>
         <section class="boxes">
           <div class="image">
-            <img src="<%= result[:image] %>">
+            <a href="<%= result[:url] %>"><img src="<%= result[:image] %>"></a>
           </div>
           <div class="text">
             <span id="title"><%= result[:title] %></span>
